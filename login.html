@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Login page</title>
+  <link rel="stylesheet" href="styles/style_login.css">
+  
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Hello Again!</h1>
+    <p>Welcome back you've <br> been missed!</p>
+	
+    <form action= " <?php $_SERVER['PHP_SELF']; ?> " method="post" name="login_form">
+      <input type="text" name="uname" placeholder="Enter username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <p class="recover">
+        <a href="#">Recover Password</a>
+      </p>
+    
+    <input type="submit" name="submit" value="login" class="subm">
+	
+	<closeform></closeform></form>
+	
+    <p class="or">Not a member? <a href="signup.php">Register Now</a> </p>
+	  
+    </div>
+ 
+</body>
+</html>
+
